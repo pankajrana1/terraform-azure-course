@@ -12,7 +12,7 @@ resource "azurerm_virtual_machine" "demo-instance" {
 
   storage_image_reference {
     publisher = "Canonical"
-    offer     = "UbuntuServer"
+    offer     = "Ubuntu Server"
     sku       = "16.04-LTS"
     version   = "latest"
   }
@@ -25,7 +25,7 @@ resource "azurerm_virtual_machine" "demo-instance" {
   os_profile {
     computer_name  = "demo-instance"
     admin_username = "demo"
-    admin_password = "deploymentdemo@123"
+    admin_password = "......"
   }
   os_profile_linux_config {
     disable_password_authentication = true
